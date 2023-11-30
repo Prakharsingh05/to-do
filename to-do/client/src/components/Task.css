@@ -1,0 +1,52 @@
+.task-container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-action {
+  cursor: pointer;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card-due-date {
+  color: #777;
+}
+
+.card-type {
+  padding: 0;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .task-container {
+    max-width: 100%;
+  }
+}

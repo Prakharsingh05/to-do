@@ -1,0 +1,92 @@
+.task-form-container {
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-form-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-field {
+  margin-bottom: 1.5rem;
+}
+
+.description-field input{
+  height: 160px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-field select {
+  appearance: none;
+  cursor: pointer;
+}
+
+.form-field textarea {
+  resize: vertical;
+}
+
+.form-field span {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 0.5rem;
+  display: block;
+}
+
+.button-container {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1rem;
+}
+
+
+.button-container button {
+  padding: 12px;
+  background-color: #00D5FA;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 50%; /* Adjusted for medium-sized screens */
+}
+
+.button-container button:hover {
+  background-color: #00a6c9;
+}
+
+
+@media (max-width: 768px) {
+  .task-form-container {
+    max-width: 90%;
+  }
+
+  .button-container button {
+    width: 100%;
+  }
+
+  .button-container  {
+    /* width: 100%; Adjusted for mobile screens */
+    flex-direction: column;
+  }
+}
