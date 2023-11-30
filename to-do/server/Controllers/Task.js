@@ -1,5 +1,5 @@
 import Task from "../models/Task.js";
-import dayjs from "dayjs";
+
 export const CreateTask = async (req, res, next) => {
   try {
     
@@ -47,7 +47,7 @@ export const getTask = async (req, res, next) => {
 export const getTasks = async (req, res, next) => {
   try {
     const type = req.query?.type
-    // const day = req.query?.day
+    
     const { id } = req.user
  
     if (type === "Pending") {
